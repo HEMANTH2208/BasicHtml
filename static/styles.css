@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg {
+  background-color: aquamarine;
+  height: 100vh;
+}
+
+.hd {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.bg1 {
+  background-color: white;
+  height: 50vh;
+  width: 32vw;
+  margin-left: 30vw;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+#name {
+  width: 30vw;
+  background-color: rgb(177, 221, 243);
+  height: 5vh;
+  border-width: 0px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  padding: 5px;
+}
+
+#email {
+  width: 30vw;
+  background-color: rgb(177, 221, 243);
+  height: 5vh;
+  border-width: 0px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  padding: 5px;
+}
+
+#pass {
+  width: 30vw;
+  background-color: rgb(177, 221, 243);
+  height: 5vh;
+  border-width: 0px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  padding: 5px;
+}
+
+.input {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 20px;
+  color: white;
+  background-color: rgb(53, 85, 244);
+  border-radius: 10px;
+  border-width: 0px;
+  margin-left: 12vw;
+  margin-top: 10px;
+}
