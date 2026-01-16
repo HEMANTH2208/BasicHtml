@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-.bg {
+body {
   background-color: aquamarine;
   height: 100vh;
 }
@@ -31,7 +31,7 @@
   border-radius: 10px;
   margin: 10px;
   margin-left: 0px;
-  padding: 5px;
+  padding-left: 10px;
 }
 
 #email {
@@ -42,7 +42,7 @@
   border-radius: 10px;
   margin: 10px;
   margin-left: 0px;
-  padding: 5px;
+  padding-left: 10px;
 }
 
 #pass {
@@ -53,7 +53,7 @@
   border-radius: 10px;
   margin: 10px;
   margin-left: 0px;
-  padding: 5px;
+  padding-left: 10px;
 }
 
 .input {
@@ -69,4 +69,9 @@
   border-width: 0px;
   margin-left: 12vw;
   margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(219, 69, 32);
+  cursor: pointer;
 }
