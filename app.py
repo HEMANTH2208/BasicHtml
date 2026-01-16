@@ -1,5 +1,7 @@
 from flask import Flask, request, render_template
 import sqlite3 as sql
+from werkzeug.security import generate_password_hash, check_password_hash 
+
 
 app = Flask(__name__)
 
@@ -9,9 +11,9 @@ def create_table():
     cur.execute("""
         CREATE TABLE IF NOT EXISTS formUser (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT,
-            email TEXT,
-            password TEXT
+            name varchar(100),
+            email varchar(100),
+            password varchar(100)
         )
     """)
     conn.commit()
@@ -25,16 +27,20 @@ def home():
 
 @app.route('/submit', methods = ['POST'])
 def submit():
-    name = request.form['name']
-    email = request.form['email']
+    Name = request.form['name']
+    Email = request.form['email']
     Pass = request.form['password']
+
+    hassed_pass = generate_password_hash(Pass)
 
     conn = sql.connect('form.db')
     cur = conn.cursor()
 
-    cur.execute("INSERT INTO formUser (name, email, password) VALUES (?, ?, ?)", (name, email, Pass))
+    cur.execute("INSERT INTO formUser (name, email, password) VALUES (?, ?, ?)", (Name, Email, hassed_pass))
     conn.commit()
     conn.close()
     return "Data saved successfully"
+
+
 
 app.run(debug = True)
